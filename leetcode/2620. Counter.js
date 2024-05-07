@@ -38,11 +38,8 @@ Answer
 
             (or)
 var createCounter = function(n) {
-    let i=0;
     return function() {
-        n = (i === 0)? n:n+1;
-        i++;
-        return n;
+        return n++;
     };
 };
 
